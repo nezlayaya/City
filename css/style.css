@@ -1,0 +1,157 @@
+/*---------------------------- Rest css ----------------------------*/
+
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+
+/*-----------------------------------------------------------*/
+
+body {
+    font-family: "open_sansregular";
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: #000;
+    display: inline-block;
+}
+
+/*------------------------ Header ------------------*/
+
+header .header_flex {
+    display: flex; justify-content: space-between; align-items: center; padding: 14px 0;
+}
+a.logo img{
+     display: block;   
+}
+nav ul {
+    display: flex;
+}
+
+nav ul li:not(:last-child) {
+    padding: 0 23px 0 0;
+}
+
+nav ul li a {
+    font-family: "montserratregular";
+    text-transform: uppercase;
+}
+h1,h2{
+    text-transform: uppercase;
+}
+
+main{
+    padding: 82px 0 0 0;
+}
+
+
+/*----------------------------Slider------------------------*/
+
+.slider {
+    width: 100%;
+    position: relative;
+}
+.wrap-for-slider {
+    display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;
+}
+.item {display: none; position: relative;
+}
+item.show img {
+    width: 100%;
+}
+.show {
+    opacity: 1; display: block;
+}
+.button i {
+    width: 20px; height: 20px; color: #fff; display: block;
+}
+.button:hover i{
+    color: #f76e43; 
+}
+.slider span.button-left{
+     position: absolute; left: 30px; top: 250px; z-index: 9999999999;
+}
+.slider .button-right{
+    position: absolute; right: 30px; top: 250px;
+}
+.slide {
+    height: 497px; width: 100%;
+}
+.slider span{
+    border: 1px solid #f76e43; text-align: center; cursor: pointer; padding: 2px 3px;
+}
+.slider span:hover{
+    background-color: #fff; border-color: #f76e43;
+}
+.slider .item .container-fluid{
+    position: absolute; top: 0; left: 0; right: 0; text-align: center; padding: 160px 0 0 0; color: #fff;
+}
+.slider .item .container-fluid h1{
+     font: 42px montserratregular; 
+}
+.slider .item .container-fluid p{
+   font: 26px open_sansregular;
+}
+.slider .item .container-fluid a{
+    font: 18px montserratregular; color: #fff; padding: 15px 35px; border: 2px solid #ff6e40;
+}
+.slider .item .container-fluid a:hover{
+    color: #f76e43; background-color: #fff;
+}
+
+
+
+/*---------------------About company----------------------------*/
+.about-company{
+    text-align: center;
+    padding: 100px 0;
+}
+.about-company span{
+    color: #bdbdbd; font: 16px montserratregular; text-transform: uppercase;
+}
+.about-company h2{
+    color: #212121; font-size: 30px montserratregular; 
+}
+.about-company p{
+    color: #616161; font: 16px open_sansregular; font-weight: 400; line-height: 22px; margin: 
+}
+.about-company a.more{
+    border: 2px solid #212121; background-color: rgba(255, 255, 255, 0); padding: 15px 35px; color: #212121; font: 14px montserratregular; font-weight: 400; text-transform: uppercase; margin: 30px 0 0 0; 
+}
+header{
+  position: fixed;
+  width: 100%;
+  height: 82px;
+z-index: 99999999999;
+        background-color: #fff;
+    transition: all 0.4s ease;
+}
