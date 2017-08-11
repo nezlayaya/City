@@ -96,6 +96,7 @@ main{
 .slider {
     width: 100%;
     position: relative;
+    z-index: 1;
 }
 .wrap-for-slider {
     display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;
@@ -115,7 +116,7 @@ main{
     color: #f76e43; 
 }
 .slider span.button-left{
-     position: absolute; left: 30px; top: 250px; z-index: 9999999999;
+     position: absolute; left: 30px; top: 250px; z-index: 1;
 }
 .slider .button-right{
     position: absolute; right: 30px; top: 250px;
@@ -124,7 +125,8 @@ main{
     height: 497px; width: 100%;
 }
 .slider span{
-    border: 2px solid #f76e43; text-align: center; cursor: pointer; padding: 22px 16px 12px 14px;
+    border: 2px solid #f76e43; text-align: center; cursor: pointer; width: 41px; height: 40px;
+    display: flex; align-items: center; justify-content: center;
 }
 .slider span i{
     font-size: 18px; font-weight: 400;
@@ -319,3 +321,5 @@ main{
 .contacts-header h2{
     color: #212121; font: 30px montserratregular; font-weight: 400; text-transform: uppercase;
 }
+
+
