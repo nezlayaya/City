@@ -15,21 +15,21 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 header_flex">
-                        <a href="#" class="logo"><img src="images/logo.gif" alt=""></a>
-                        <nav>
-                            <ul>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">our works</a></li>
-                                <li><a href="#">contact</a></li>
-                            </ul>
-                        </nav>
+                    <a href="#" class="logo"><img src="images/logo.gif" alt=""></a>
+                    <nav id="menu">
+                        <ul>
+                            <li><a href="#about-company">About</a></li>
+                            <li><a href="#our-services">our-services</a></li>
+                            <li><a href="#our-works">our works</a></li>
+                            <li><a href="#contacts">contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <div class="wrap-for-slider">
+        <div id="wrap-for-slider">
             <div class="slider">
                 <span onclick="clickLeft()" class="button button-left"><i class="fa fa-angle-left " aria-hidden="true"></i></span>
                 <div class="item show">
@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img src="images/bandit1.jpg" alt="img" class="slide">
+                    <img src="images/bandit2.jpg" alt="img" class="slide">
                     <div class="container-fluid">
                         <h1>Lorem ipsum dolor</h1>
                         <p>Aenean id ligula aliquam dolor tristique fringilla</p>
@@ -51,7 +51,7 @@
                 <span onclick="clickRight()" class="button button-right"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
             </div>
         </div>
-        <div class="about-company">
+        <div id="about-company">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
@@ -68,23 +68,25 @@
                 </div>
             </div>
         </div>
-        <div class="our-services">
+        <div id="our-services">
             <div class="container-fluid">
-                <div class ="row">
+                <div class="row">
                     <span>Lorem ipsum</span>
                     <h2>Our services</h2>
                     <div class="col-md-4 col-sm-12">
-                        <div>
-                            <div class="our-services_item">
-                                <img src="images/people.png" alt="">
-                                <div>
+                        <div class="our-services_item">
+                            <div class="row">
+                                <div class="col-md-2 people"></div>
+                                <div class="col-md-10">
                                     <h3>Some Service</h3>
                                     <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pel lentesque rutrum tellus ut mauris scelerisque hendrerit.</p>
                                 </div>
                             </div>
-                            <div class="our-services_item">
-                                <img src="images/star.png" alt="">
-                                <div>
+                        </div>
+                        <div class="our-services_item">
+                            <div class="row">
+                                <div class="col-md-2 star"></div>
+                                <div class="col-md-10">
                                     <h3>Some Service</h3>
                                     <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pel lentesque rutrum tellus ut mauris scelerisque hendrerit.</p>
                                 </div>
@@ -93,33 +95,41 @@
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <div class="our-services_item">
-                            <img src="images/dialog.png" alt="">
-                            <div>
-                                <h3>Some Service</h3>
-                                <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pel lentesque rutrum tellus ut mauris scelerisque hendrerit.</p>
+                            <div class="row">
+                                <div class="col-md-2 dialog"></div>
+                                <div class="col-md-10">
+                                    <h3>Some Service</h3>
+                                    <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pel lentesque rutrum tellus ut mauris scelerisque hendrerit.</p>
+                                </div>
                             </div>
                         </div>
                         <div class="our-services_item">
-                            <img src="images/plain.png" alt="">
-                            <div>
-                                <h3>Some Service</h3>
-                                <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pel lentesque rutrum tellus ut mauris scelerisque hendrerit.</p>
+                            <div class="row">
+                                <div class="col-md-2 plain"></div>
+                                <div class="col-md-10">
+                                    <h3>Some Service</h3>
+                                    <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pel lentesque rutrum tellus ut mauris scelerisque hendrerit.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <div class="our-services_item">
-                            <img src="images/favorite.png" alt="">
-                            <div>
-                                <h3>Some Service</h3>
-                                <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pel lentesque rutrum tellus ut mauris scelerisque hendrerit.</p>
+                            <div class="row">
+                                <div class="col-md-2 favorite"></div>
+                                <div class="col-md-10">
+                                    <h3>Some Service</h3>
+                                    <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pel lentesque rutrum tellus ut mauris scelerisque hendrerit.</p>
+                                </div>
                             </div>
                         </div>
                         <div class="our-services_item">
-                            <img src="images/study.png" alt="">
-                            <div>
-                                <h3>Some Service</h3>
-                                <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pel lentesque rutrum tellus ut mauris scelerisque hendrerit.</p>
+                            <div class="row">
+                                <div class="col-md-2 study"></div>
+                                <div class="col-md-10">
+                                    <h3>Some Service</h3>
+                                    <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pel lentesque rutrum tellus ut mauris scelerisque hendrerit.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -129,21 +139,102 @@
         <div class="subscribe-now">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-10">
+                    <div class="col-md-9">
                         <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h2>
                         <p>Cras ac tortor hendrerit, tristique elit sed, placerat justo.</p>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <button>Subscribe now</button>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="our-works">
+            <div class="container-fluid">
+                <div class="row">
+                    <span>Morbi rhoncus</span>
+                    <h2>Our works</h2>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="our-works_item col-md-12 first_item_our-works">
+                            <div class="our-works_item_hidden ">
+                                <h3>Ut pretium leo vel</h3>
+                                <p>Category</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="our-works_item col-md-12 second_item_our-works">
+                            <div class="our-works_item_hidden">
+                                <h3>Ut pretium leo vel</h3>
+                                <p>Category</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="our-works_item col-md-12 third_item_our-works">
+                            <div class="our-works_item_hidden">
+                                <h3>Ut pretium leo vel</h3>
+                                <p>Category</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="our-works_item col-md-12 fourth_item_our-works">
+                            <div class="our-works_item_hidden">
+                                <h3>Ut pretium leo vel</h3>
+                                <p>Category</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="our-works_item col-md-12 fifth_item_our-works">
+                            <div class="our-works_item_hidden">
+                                <h3>Ut pretium leo vel</h3>
+                                <p>Category</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="our-works_item col-md-12 sixth_item_our-works">
+                            <div class="our-works_item_hidden">
+                                <h3>Ut pretium leo vel</h3>
+                                <p>Category</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer></footer>
+    <footer>
+          <div id="contacts">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 contacts-header">
+                    <span>tristique</span>
+                    <h2>Contact</h2>
+                    </div>
+                    <div class="col-md-3 contacts-">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <p>2619 Old Fort RD<br>Fort Washington, PA 19034</p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p>610-516-0418</p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fa fa-at" aria-hidden="true"></i>
+                        <p>layout.02@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
-
 </html>

@@ -42,17 +42,17 @@ body {
 }
 
 a{
-    color: #000;
-    display: inline-block;
+    color: #000; display: inline-block;
 }
-a:hover{
-    text-decoration: none; color: #ff6e40;
+a:hover,a:focus{
+    text-decoration: none; color: #ff6e40; 
 }
+
 
 /*------------------------ Header ------------------*/
 
 header .header_flex {
-    display: flex; justify-content: space-between; align-items: center; padding: 20px 0 0 0;
+    display: flex; justify-content: space-between; align-items: center; padding: 20px 0 0 15px;;
 }
 header{
     position: fixed;
@@ -140,7 +140,7 @@ main{
      font: 42px montserratregular; 
 }
 .slider .item .container-fluid p{
-   font: 26px open_sansregular;
+   font-size: 26px;
 }
 .slider .item .container-fluid a{
     font: 18px montserratregular; color: #fff; padding: 18px 38px; border: 2px solid #ff6e40;
@@ -152,24 +152,26 @@ main{
 
 
 /*---------------------About company----------------------------*/
-.about-company{
+#about-company{
     text-align: center; padding: 100px 0;
 }
-.about-company span,
-.our-services span{
+#about-company span,
+#our-services span,
+#our-works span{
     color: #bdbdbd; font: 16px montserratregular; display: block; text-transform: uppercase; text-align: center;
 }
-.about-company h2,
-.our-services h2{
+#about-company h2,
+#our-services h2,
+#our-works h2{
     color: #212121; font: 30px montserratregular; margin: 0 0 35px 0; text-align: center;
 }
-.about-company p{
-    color: #616161; font: 16px open_sansregular; font-weight: 400; line-height: 22px;
+#about-company p{
+    color: #616161; font-weight: 400; line-height: 22px;
 }
-.about-company a.more{
+#about-company a.more{
     border: 2px solid #212121; background-color: rgba(255, 255, 255, 0); padding: 15px 35px; color: #212121; font: 14px montserratregular; font-weight: 400; text-transform: uppercase; margin: 30px 0 0 0; 
 }
-.about-company a.more:hover{
+#about-company a.more:hover{
     background-color: #F76E43; color: #fff; border-color: #fff;
 }
 
@@ -177,7 +179,7 @@ main{
 
 
 /*--------------------Our-services------------------*/
-.our-services{
+#our-services{
     background-color: #f5f5f5; padding: 100px 0;
 }
 .our-services_item{
@@ -189,18 +191,131 @@ main{
 .our-services_item img{
     display: table-cell;
 }
-.our-services_item div{
-    display: table-cell; vertical-align: middle; padding: 0 0 0 20px;
+.our-services_item .people{
+    background-image: url(../images/people.png); width: 85px; height: 80px;
+}
+.our-services_item .star{
+    background-image: url(../images/star.png); width: 86px; height: 82px;
+}
+.our-services_item .dialog{
+     background-image: url(../images/dialog.png); width: 87px; height: 82px;
+}
+.our-services_item .plain{
+    background-image: url(../images/plain.png); width: 87px; height: 80px;
+}
+.our-services_item .favorite{
+    background-image: url(../images/favorite.png); width: 87px; height: 80px;
+}
+.our-services_item .study{
+    background-image: url(../images/study.png); width: 82px; height: 80px;
+}
+
+.our-services_item>div{
+    display: flex; padding: 0 0 0 20px;
 }
 .our-services_item div h3{
     color: #212121; font: 20px montserratregular; font-weight: 400; text-transform: uppercase;
 }
 .our-services_item div p{
-    font: 16px open_sansregular; font-weight: 400; line-height: 20px; color: #616161;
+    font-weight: 400; line-height: 20px; color: #616161;
 }
 
-/*------------------------Subscriber now----------------------------*/
 
+
+/*------------------------Subscriber now----------------------------*/
+.subscribe-now{
+    background-color: #424242; padding: 46px 0 38px 0;
+}
 .subscribe-now button{
-    padding: 20px 78px;
+    padding: 20px 78px; display: inline-block; font: 13px montserratregular; width: 280px; text-transform: uppercase; color: #fff; border: 2px solid #ff6e40; background-color: rgba(255, 255, 255, 0);
+}
+.subscribe-now button:hover{
+    background-color: #fff; color: #212121;
+}
+.subscribe-now h2{
+    font: 22px montserratregular; font-weight: 400; text-transform: uppercase; color: #fff;
+}
+.subscribe-now p{
+    color: #bdbdbd;
+    font-weight: 400; line-height: 20px;
+}
+
+
+/*------------------------Our-works------------------------------*/
+#our-works{
+    padding: 100px 0;
+}
+#our-works .row:not(:last-child){
+    padding: 0 0 20px 0;
+}
+.our-works_item{
+    position: relative;
+}
+.our-works_item_hidden{
+    display: none; position: absolute; bottom: 0; left: 0; right: 0; text-align: center; padding: 30px 0 26px 0; background-color: #f4f4f4;
+}
+.our-works_item_hidden h3{
+    color: #ff6e40; font: 18px montserratregular; font-weight: 400; text-transform: uppercase;
+}
+.our-works_item_hidden p{
+    color: #757575; font: font-weight: 400; line-height: 20px;
+}
+
+.our-works_item:hover .our-works_item_hidden{
+    display: block; 
+}
+#our-works img{
+        display: block;
+    width: 100%;
+}
+#our-works .col-md-4.col-sm-12{
+    padding-right: 0;
+    padding-left: 20px;
+}
+.first_item_our-works{
+    background: url(../images/our-works-1.png);
+    height: 380px;
+}
+.first_item_our-works:hover{
+     background: url(../images/our-works-1.png);
+}
+.second_item_our-works{
+    background-image: url(../images/our-works-2.png); height: 380px;
+}
+.third_item_our-works{
+    background-image: url(../images/our-works-3.png); height: 380px;
+}
+.fourth_item_our-works{
+    background-image: url(../images/our-works-4.png); height: 380px;
+}
+.fifth_item_our-works{
+    background-image: url(../images/our-works-5.png); height: 380px;
+}
+.sixth_item_our-works{
+    background-image: url(../images/our-works-6.png); height: 380px;
+}
+
+
+
+/*-----------------Contacts--------------------------*/
+#contacts{
+    padding: 47px 0; background-color: #f5f5f5;
+}
+#contacts div{
+    padding: 0;
+}
+#contacts i{
+    font-size: 30px; font-weight: 400; text-transform: uppercase; color: #fff; background-color: #ff6e40; width: 60px; height: 60px; border-radius: 50px; align-items: center; display: inline-flex; justify-content: center;
+}
+#contacts p{
+    display: inline-block; vertical-align: middle; padding: 0 0 0 14px; color: #616161;font-weight: 400; line-height: 20px;
+}
+.contacts-header{
+    text-align: left;
+}
+.contacts-header span{
+    color: #bdbdbd; font: 16px montserratregular; font-weight: 400; text-transform: uppercase;
+}
+.contacts-header h2{
+    color: #212121; font: 30px montserratregular; font-weight: 400; text-transform: uppercase;
 }
