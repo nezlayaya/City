@@ -70,7 +70,6 @@ nav{
 }
 .header_flex nav ul {
     display: flex;
-    justify-content: flex-end;
 }
 
 nav ul li:not(:last-child) {
@@ -323,3 +322,18 @@ main{
 }
 
 
+@media screen and (max-width: 1200px){
+    nav{
+        padding: 0 20px;
+    }
+    .subscribe-now{
+        text-align: center;
+    }
+    #contacts .contacts-item{
+        padding: 20px;
+        text-align: center;
+    }
+    .row{
+        margin: 0;
+    }
+}
