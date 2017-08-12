@@ -3,6 +3,7 @@
 * {
     text-decoration: none;
     list-style: none;
+    padding: 0;
 }
 
 ul {
@@ -52,7 +53,7 @@ a:hover,a:focus{
 /*------------------------ Header ------------------*/
 
 header .header_flex {
-    display: flex; justify-content: space-between; align-items: center; padding: 20px 0 0 15px;;
+    display: flex; justify-content: space-between; align-items: center; padding: 20px 0 0 0;
 }
 header{
     position: fixed;
@@ -88,8 +89,9 @@ h1,h2{
 main{
     padding: 82px 0 0 0;
 }
-
-
+.menu-icon{
+    display: none;
+}
 /*----------------------------Slider------------------------*/
 
 .slider {
@@ -208,7 +210,7 @@ main{
     background-image: url(../images/favorite.png); width: 87px; height: 80px;
 }
 .our-services_item .study{
-    background-image: url(../images/study.png); width: 82px; height: 80px;
+    background-image: url(../images/study.png); width: 84px; height: 80px;
 }
 
 .our-services_item>div{
@@ -249,6 +251,10 @@ main{
 #our-works .row:not(:last-child){
     padding: 0 0 20px 0;
 }
+#our-works .row>div{
+    margin: 0 0 20px 0;
+    left: 8%;
+}
 .our-works_item{
     position: relative;
 }
@@ -259,7 +265,7 @@ main{
     color: #ff6e40; font: 18px montserratregular; font-weight: 400; text-transform: uppercase;
 }
 .our-works_item_hidden p{
-    color: #757575; font: font-weight: 400; line-height: 20px;
+    color: #757575; font-weight: 400; line-height: 20px;
 }
 
 .our-works_item:hover .our-works_item_hidden{
@@ -274,26 +280,25 @@ main{
     padding-left: 20px;
 }
 .first_item_our-works{
-    background: url(../images/our-works-1.png);
-    height: 380px;
+    background: url(../images/our-works-1.png) no-repeat; height: 380px;
 }
 .first_item_our-works:hover{
      background: url(../images/our-works-1.png);
 }
 .second_item_our-works{
-    background-image: url(../images/our-works-2.png); height: 380px;
+    background: url(../images/our-works-2.png) no-repeat; height: 380px;
 }
 .third_item_our-works{
-    background-image: url(../images/our-works-3.png); height: 380px;
+    background: url(../images/our-works-3.png) no-repeat; height: 380px;
 }
 .fourth_item_our-works{
-    background-image: url(../images/our-works-4.png); height: 380px;
+    background: url(../images/our-works-4.png) no-repeat; height: 380px;
 }
 .fifth_item_our-works{
-    background-image: url(../images/our-works-5.png); height: 380px;
+    background: url(../images/our-works-5.png) no-repeat; height: 380px;
 }
 .sixth_item_our-works{
-    background-image: url(../images/our-works-6.png); height: 380px;
+    background: url(../images/our-works-6.png) no-repeat; height: 380px;
 }
 
 
@@ -302,13 +307,17 @@ main{
 #contacts{
     padding: 47px 0; background-color: #f5f5f5;
 }
+#contacts .row{
+    padding: 0 0 0 30px;
+}
 #contacts div{
     padding: 0;
 }
 #contacts i{
     font-size: 30px; font-weight: 400; text-transform: uppercase; color: #fff; background-color: #ff6e40; width: 60px; height: 60px; border-radius: 50px; align-items: center; display: inline-flex; justify-content: center;
 }
-#contacts p{
+#contacts p,
+#contacts a{
     display: inline-block; vertical-align: middle; padding: 0 0 0 14px; color: #616161;font-weight: 400; line-height: 20px;
 }
 .contacts-header{
@@ -320,6 +329,31 @@ main{
 .contacts-header h2{
     color: #212121; font: 30px montserratregular; font-weight: 400; text-transform: uppercase;
 }
+
+/*-----------------Copyright-------------------*/
+
+.copyright{
+    padding: 16px 0;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.social i{
+    color: #bdbdbd; font-size: 16px; font-weight: 400; text-transform: uppercase;
+}
+.social li:not(:last-child){
+    padding: 0 15px 0 0;
+}
+.copyright-company{
+    text-align: right;
+}
+.copyright-company span{
+    color: #ff6e40;
+}
+
+
+
 
 
 @media screen and (max-width: 1200px){
@@ -336,4 +370,58 @@ main{
     .row{
         margin: 0;
     }
+}
+
+@media screen and (max-width: 1150px){
+    .subscribe-now .content,
+    .subscribe-now .content+div{
+        width: 100%;
+    }
+    .subscribe-now .content+div button{
+        margin: 20px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .menu-icon{
+        display: inline-block;
+        float: right;
+        top: 10px;
+        width: 50px;
+        background-color: #fff;
+        border: 1px solid #ea5218;
+        cursor: pointer;
+    }
+    nav{
+        display: none;
+    }
+    header{
+        position: static;
+        height: auto;
+    }
+    header .header_flex{
+        display: block;
+        padding: 10px 0;
+    }
+    .logo{
+        float: none;
+    }
+    main{
+        padding: 0;
+    }
+    .header_flex nav ul{
+        display: block;
+    }
+    nav.menu ul li{
+        text-align: center;
+        padding: 15px 0;
+    }
+    nav.menu ul li:not(:last-child){
+        border-bottom: 1px solid #eee;
+        max-width: 60%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 990px){
+
 }
