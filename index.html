@@ -13,256 +13,290 @@
 </head>
 
 <body>
-    <header>
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 header_flex">
+                <a href="#" class="logo col-sm-6"><img src="images/logo.gif" alt=""></a>
+                <button class="menu-icon col-sm-6"><i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#about-company">About</a></li>
+                        <li><a href="#our-services">our-services</a></li>
+                        <li><a href="#our-works">our works</a></li>
+                        <li><a href="#contacts">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="slider">
+        <span onclick="clickLeft()" class="button button-left"><i class="fa fa-angle-left "
+                                                                  aria-hidden="true"></i></span>
+        <div class="item show">
+            <img src="images/bandit1.jpg" alt="img" class="slide">
+            <div class="container-fluid">
+                <h1>Lorem ipsum dolor</h1>
+                <p>Aenean id ligula aliquam dolor tristique fringilla</p>
+                <a href="#">Start now</a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/bandit2.jpg" alt="img" class="slide">
+            <div class="container-fluid">
+                <h1>Lorem ipsum dolor</h1>
+                <p>Aenean id ligula aliquam dolor tristique fringilla</p>
+                <a href="#">Start now</a>
+            </div>
+        </div>
+        <span onclick="clickRight()" class="button button-right"><i class="fa fa-angle-right"
+                                                                    aria-hidden="true"></i></span>
+    </div>
+    <div id="about-company">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12 header_flex">
-                    <a href="#" class="logo col-sm-6"><img src="images/logo.gif" alt=""></a>
-                    <button class="menu-icon col-sm-6"><i class="fa fa-bars" aria-hidden="true"></i>
-                    </button>
-                    <nav class="menu">
-                        <ul>
-                            <li><a href="#about-company">About</a></li>
-                            <li><a href="#our-services">our-services</a></li>
-                            <li><a href="#our-works">our works</a></li>
-                            <li><a href="#contacts">contact</a></li>
-                        </ul>
-                    </nav>
+                <div class="col-md-12">
+                    <span>Donec tristique rutrum</span>
+                    <h2>About company</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis dui non nulla fermentum
+                        sollicitudin. Nunc dictum finibus dui, in ornare lectus venenatis eget. Sed mollis tellus auctor
+                        lorem congue, in tincidunt leo pharetra. Nulla facilisi. Mauris sed justo consequat, pretium sem
+                        in, tempor sapien. Vestibulum maximus leo fermentum risus vehicula, nec blandit risus tincidunt.
+                        Nulla elementum congue turpis. Aenean id ligula aliquam dolor tristique fringilla. Aenean vel
+                        faucibus leo, ac iaculis sem. Suspendisse in erat id leo ultricies euismod eget et ex. Praesent
+                        tempus magna justo, a ultrices sem molestie non. Phasellus id mi quis dolor sollicitudin
+                        condimentum. Maecenas blandit leo nulla, a convallis ex laoreet vel. Maecenas iaculis massa
+                        placerat leo rutrum, et luctus diam sollicitudin. Cras nisl orci, ullamcorper non nisi eu,
+                        ultricies facilisis purus.
+                    </p>
+                    <p>
+                        Suspendisse potenti. Cras cursus ex nulla, ac faucibus leo suscipit in. Nulla maximus
+                        pellentesque sapien, et tincidunt nisl malesuada feugiat. Cras ac tortor hendrerit, tristique
+                        elit sed, placerat justo. Mauris sit amet malesuada nisl, vel tincidunt eros. Cras eget tempus
+                        nibh. Mauris rutrum risus at enim sollicitudin, sed posuere lectus suscipit. Morbi velit felis,
+                        viverra et quam ut, tincidunt cursus nisl. Phasellus tincidunt, ex bibendum viverra bibendum, mi
+                        nisi ultrices elit, laoreet faucibus massa est a massa.
+                    </p>
+                    <a href="#" class="more">Read more</a>
                 </div>
             </div>
         </div>
-    </header>
-    <main>
-        <div class="slider">
-            <span onclick="clickLeft()" class="button button-left"><i class="fa fa-angle-left " aria-hidden="true"></i></span>
-            <div class="item show">
-                <img src="images/bandit1.jpg" alt="img" class="slide">
-                <div class="container-fluid">
-                    <h1>Lorem ipsum dolor</h1>
-                    <p>Aenean id ligula aliquam dolor tristique fringilla</p>
-                    <a href="#">Start now</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/bandit2.jpg" alt="img" class="slide">
-                <div class="container-fluid">
-                    <h1>Lorem ipsum dolor</h1>
-                    <p>Aenean id ligula aliquam dolor tristique fringilla</p>
-                    <a href="#">Start now</a>
-                </div>
-            </div>
-            <span onclick="clickRight()" class="button button-right"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-        </div>
-        <div id="about-company">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <span>Donec tristique rutrum</span>
-                        <h2>About company</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis dui non nulla fermentum sollicitudin. Nunc dictum finibus dui, in ornare lectus venenatis eget. Sed mollis tellus auctor lorem congue, in tincidunt leo pharetra. Nulla facilisi. Mauris sed justo consequat, pretium sem in, tempor sapien. Vestibulum maximus leo fermentum risus vehicula, nec blandit risus tincidunt. Nulla elementum congue turpis. Aenean id ligula aliquam dolor tristique fringilla. Aenean vel faucibus leo, ac iaculis sem. Suspendisse in erat id leo ultricies euismod eget et ex. Praesent tempus magna justo, a ultrices sem molestie non. Phasellus id mi quis dolor sollicitudin condimentum. Maecenas blandit leo nulla, a convallis ex laoreet vel. Maecenas iaculis massa placerat leo rutrum, et luctus diam sollicitudin. Cras nisl orci, ullamcorper non nisi eu, ultricies facilisis purus.
-                        </p>
-                        <p>
-                            Suspendisse potenti. Cras cursus ex nulla, ac faucibus leo suscipit in. Nulla maximus pellentesque sapien, et tincidunt nisl malesuada feugiat. Cras ac tortor hendrerit, tristique elit sed, placerat justo. Mauris sit amet malesuada nisl, vel tincidunt eros. Cras eget tempus nibh. Mauris rutrum risus at enim sollicitudin, sed posuere lectus suscipit. Morbi velit felis, viverra et quam ut, tincidunt cursus nisl. Phasellus tincidunt, ex bibendum viverra bibendum, mi nisi ultrices elit, laoreet faucibus massa est a massa.
-                        </p>
-                        <a href="#" class="more">Read more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="our-services">
-            <div class="container-fluid">
-                <div class="row">
-                    <span>Lorem ipsum</span>
-                    <h2>Our services</h2>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="our-services_item">
-                            <div class="row">
-                                <div class="col-md-2 col-sm-6  col-xs-12 people"></div>
-                                <div class="col-md-10 col-sm-6 col-xs-12">
-                                    <h3>Some Service</h3>
-                                    <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pel lentesque rutrum tellus ut mauris scelerisque hendrerit.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="our-services_item">
-                            <div class="row">
-                                <div class="col-md-2 col-sm-6 col-xs-12 star"></div>
-                                <div class="col-md-10 col-sm-6 col-xs-12">
-                                    <h3>Some Service</h3>
-                                    <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pel lentesque rutrum tellus ut mauris scelerisque hendrerit.</p>
-                                </div>
+    </div>
+    <div id="our-services">
+        <div class="container-fluid">
+            <div class="row">
+                <span>Lorem ipsum</span>
+                <h2>Our services</h2>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="our-services_item">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-6  col-xs-12 people"></div>
+                            <div class="col-md-10 col-sm-6 col-xs-12">
+                                <h3>Some Service</h3>
+                                <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pel lentesque rutrum
+                                    tellus ut mauris scelerisque hendrerit.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="our-services_item">
-                            <div class="row">
-                                <div class="col-md-2 col-sm-6 col-xs-12 dialog"></div>
-                                <div class="col-md-10 col-sm-6 col-xs-12">
-                                    <h3>Some Service</h3>
-                                    <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pel lentesque rutrum tellus ut mauris scelerisque hendrerit.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="our-services_item ">
-                            <div class="row">
-                                <div class="col-md-2 col-sm-6 plain col-xs-12"></div>
-                                <div class="col-md-10 col-sm-6 col-xs-12">
-                                    <h3>Some Service</h3>
-                                    <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pel lentesque rutrum tellus ut mauris scelerisque hendrerit.</p>
-                                </div>
+                    <div class="our-services_item">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-6 col-xs-12 star"></div>
+                            <div class="col-md-10 col-sm-6 col-xs-12">
+                                <h3>Some Service</h3>
+                                <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pel lentesque rutrum
+                                    tellus ut mauris scelerisque hendrerit.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <div class="our-services_item col-md-12 col-sm-6 col-xs-12">
-                            <div class="row">
-                                <div class="col-md-2 col-sm-6 col-xs-12 favorite"></div>
-                                <div class="col-md-10 col-sm-6 col-xs-12">
-                                    <h3>Some Service</h3>
-                                    <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pel lentesque rutrum tellus ut mauris scelerisque hendrerit.</p>
-                                </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="our-services_item">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-6 col-xs-12 dialog"></div>
+                            <div class="col-md-10 col-sm-6 col-xs-12">
+                                <h3>Some Service</h3>
+                                <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pel lentesque rutrum
+                                    tellus ut mauris scelerisque hendrerit.</p>
                             </div>
                         </div>
-                        <div class="our-services_item col-md-12 col-sm-6 col-xs-12">
-                            <div class="row">
-                                <div class="col-md-2 col-sm-6 col-xs-12 study"></div>
-                                <div class="col-md-10 col-sm-6 col-xs-12
+                    </div>
+                    <div class="our-services_item ">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-6 plain col-xs-12"></div>
+                            <div class="col-md-10 col-sm-6 col-xs-12">
+                                <h3>Some Service</h3>
+                                <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pel lentesque rutrum
+                                    tellus ut mauris scelerisque hendrerit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="our-services_item col-md-12 col-sm-6 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-6 col-xs-12 favorite"></div>
+                            <div class="col-md-10 col-sm-6 col-xs-12">
+                                <h3>Some Service</h3>
+                                <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pel lentesque rutrum
+                                    tellus ut mauris scelerisque hendrerit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-services_item col-md-12 col-sm-6 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-6 col-xs-12 study"></div>
+                            <div class="col-md-10 col-sm-6 col-xs-12
 ">
-                                    <h3>Some Service</h3>
-                                    <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pel lentesque rutrum tellus ut mauris scelerisque hendrerit.</p>
-                                </div>
+                                <h3>Some Service</h3>
+                                <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pel lentesque rutrum
+                                    tellus ut mauris scelerisque hendrerit.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="subscribe-now">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-9 col-sm-12 content">
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h2>
-                        <p>Cras ac tortor hendrerit, tristique elit sed, placerat justo.</p>
+    </div>
+    <div class="subscribe-now">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-9 col-sm-12 content">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h2>
+                    <p>Cras ac tortor hendrerit, tristique elit sed, placerat justo.</p>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <button>Subscribe now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="our-works">
+        <div class="container-fluid">
+            <span>Morbi rhoncus</span>
+            <h2>Our works</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-5">
+                    <div class="our-works_item col-md-12 col-sm-12 col-xs-12 first_item_our-works">
+                        <div class="our-works_item_hidden ">
+                            <section>
+                                <h3>Ut pretium leo vel</h3>
+                                <p>Category</p>
+                            </section>
+                        </div>
                     </div>
-                    <div class="col-md-3 col-sm-12">
-                        <button>Subscribe now</button>
+                </div>
+                <div class="col-md-4 col-sm-5">
+                    <div class="our-works_item col-md-12 col-sm-12 col-xs-12 second_item_our-works">
+                        <div class="our-works_item_hidden">
+                            <section>
+                                <h3>Ut pretium leo vel</h3>
+                                <p>Category</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-5">
+                    <div class="our-works_item col-md-12 col-sm-12 col-xs-12 third_item_our-works">
+                        <div class="our-works_item_hidden">
+                            <section>
+                                <h3>Ut pretium leo vel</h3>
+                                <p>Category</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-5">
+                    <div class="our-works_item col-md-12 col-sm-12 col-xs-12 fourth_item_our-works">
+                        <div class="our-works_item_hidden">
+                            <section>
+                                <h3>Ut pretium leo vel</h3>
+                                <p>Category</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-5">
+                    <div class="our-works_item col-md-12 col-sm-12 col-xs-12 fifth_item_our-works">
+                        <div class="our-works_item_hidden">
+                            <section>
+                                <h3>Ut pretium leo vel</h3>
+                                <p>Category</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-5">
+                    <div class="our-works_item col-md-12 col-sm-12 col-xs-12 sixth_item_our-works">
+                        <div class="our-works_item_hidden">
+                            <section>
+                                <h3>Ut pretium leo vel</h3>
+                                <p>Category</p>
+                            </section>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="our-works">
-            <div class="container-fluid">
-                <span>Morbi rhoncus</span>
-                <h2>Our works</h2>
-                <div class="row">
-                    <div class="col-md-4 col-sm-5">
-                        <div class="our-works_item col-md-12 col-sm-12 col-xs-12 first_item_our-works">
-                            <div class="our-works_item_hidden ">
-                                <h3>Ut pretium leo vel</h3>
-                                <p>Category</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-5">
-                        <div class="our-works_item col-md-12 col-sm-12 col-xs-12 second_item_our-works">
-                            <div class="our-works_item_hidden">
-                                <h3>Ut pretium leo vel</h3>
-                                <p>Category</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-5">
-                        <div class="our-works_item col-md-12 col-sm-12 col-xs-12 third_item_our-works">
-                            <div class="our-works_item_hidden">
-                                <h3>Ut pretium leo vel</h3>
-                                <p>Category</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-5">
-                        <div class="our-works_item col-md-12 col-sm-12 col-xs-12 fourth_item_our-works">
-                            <div class="our-works_item_hidden">
-                                <h3>Ut pretium leo vel</h3>
-                                <p>Category</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-5">
-                        <div class="our-works_item col-md-12 col-sm-12 col-xs-12 fifth_item_our-works">
-                            <div class="our-works_item_hidden">
-                                <h3>Ut pretium leo vel</h3>
-                                <p>Category</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-5">
-                        <div class="our-works_item col-md-12 col-sm-12 col-xs-12 sixth_item_our-works">
-                            <div class="our-works_item_hidden">
-                                <h3>Ut pretium leo vel</h3>
-                                <p>Category</p>
-                            </div>
-                        </div>
-                    </div>
+    </div>
+</main>
+<footer>
+    <div id="contacts">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-sm-12 contacts-item contacts-header">
+                    <span>tristique</span>
+                    <h2>Contact</h2>
+                </div>
+                <div class="col-md-3 col-sm-4 contacts-item contacts">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <p>2619 Old Fort RD<br>Fort Washington, PA 19034</p>
+                </div>
+                <div class="col-md-3 col-sm-4 contacts-item">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <a href="tel:+610-516-0418">610-516-0418</a>
+                </div>
+                <div class="col-md-3 col-sm-4 contacts-item">
+                    <i class="fa fa-at" aria-hidden="true"></i>
+                    <a href="mailto:layout.02@gmail.com">layout.02@gmail.com</a>
                 </div>
             </div>
         </div>
-    </main>
-    <footer>
-        <div id="contacts">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-3 col-sm-12 contacts-item contacts-header">
-                        <span>tristique</span>
-                        <h2>Contact</h2>
-                    </div>
-                    <div class="col-md-3 col-sm-4 contacts-item contacts">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <p>2619 Old Fort RD<br>Fort Washington, PA 19034</p>
-                    </div>
-                    <div class="col-md-3 col-sm-4 contacts-item">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <a href="tel:+610-516-0418">610-516-0418</a>
-                    </div>
-                    <div class="col-md-3 col-sm-4 contacts-item">
-                        <i class="fa fa-at" aria-hidden="true"></i>
-                        <a href="mailto:layout.02@gmail.com">layout.02@gmail.com</a>
-                    </div>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20522.10731449288!2d36.23306045!3d49.987670699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1502459558190"></iframe>
+    <div class="copyright">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <p>Copyright 2016 © Layout.02</p>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a></li>
+                        <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                        </a></li>
+                        <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 copyright-company">
+                    <p>Privacy Policy <span>|</span> Terms & Conditions</p>
                 </div>
             </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20522.10731449288!2d36.23306045!3d49.987670699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1502459558190" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        <div class="copyright">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <p>Copyright 2016 © Layout.02</p>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <ul class="social">
-                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
-                            </a></li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
-                            </a></li>
-                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
-                            </a></li>
-                            <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i>
-                            </a></li>
-                            <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i>
-                            </a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12 copyright-company">
-                        <p>Privacy Policy  <span>|</span>  Terms & Conditions</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
+    </div>
+</footer>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
 </body>
 
 </html>
