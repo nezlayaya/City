@@ -187,6 +187,7 @@ main{
 }
 .our-services_item{
     display: table;
+    padding: 0;
 }
 .our-services_item:not(:last-child){
     padding: 0 0 36px 0;
@@ -198,7 +199,7 @@ main{
     background-image: url(../images/people.png); width: 85px; height: 80px;
 }
 .our-services_item .star{
-    background-image: url(../images/star.png); width: 86px; height: 82px;
+    background-image: url(../images/star.png); width: 90px; height: 82px;
 }
 .our-services_item .dialog{
      background-image: url(../images/dialog.png); width: 87px; height: 82px;
@@ -210,7 +211,7 @@ main{
     background-image: url(../images/favorite.png); width: 87px; height: 80px;
 }
 .our-services_item .study{
-    background-image: url(../images/study.png); width: 84px; height: 80px;
+    background-image: url(../images/study.png); width: 90px; height: 80px;
 }
 
 .our-services_item>div{
@@ -253,10 +254,12 @@ main{
 }
 #our-works .row>div{
     margin: 0 0 20px 0;
-    left: 8%;
 }
 .our-works_item{
     position: relative;
+}
+.our-works_item:hover{
+    background-repeat: no-repeat;
 }
 .our-works_item_hidden{
     display: none; position: absolute; bottom: 0; left: 0; right: 0; text-align: center; padding: 30px 0 26px 0; background-color: #f4f4f4;
@@ -280,25 +283,23 @@ main{
     padding-left: 20px;
 }
 .first_item_our-works{
-    background: url(../images/our-works-1.png) no-repeat; height: 380px;
+    background: url(../images/our-works-1.png) no-repeat; height: 380px; background-position-x: 50%;
 }
-.first_item_our-works:hover{
-     background: url(../images/our-works-1.png);
-}
+
 .second_item_our-works{
-    background: url(../images/our-works-2.png) no-repeat; height: 380px;
+    background: url(../images/our-works-2.png) no-repeat; height: 380px; background-position-x: 50%;
 }
 .third_item_our-works{
-    background: url(../images/our-works-3.png) no-repeat; height: 380px;
+    background: url(../images/our-works-3.png) no-repeat; height: 380px; background-position-x: 50%;
 }
 .fourth_item_our-works{
-    background: url(../images/our-works-4.png) no-repeat; height: 380px;
+    background: url(../images/our-works-4.png) no-repeat; height: 380px; background-position-x: 50%;
 }
 .fifth_item_our-works{
-    background: url(../images/our-works-5.png) no-repeat; height: 380px;
+    background: url(../images/our-works-5.png) no-repeat; height: 380px; background-position-x: 50%;
 }
 .sixth_item_our-works{
-    background: url(../images/our-works-6.png) no-repeat; height: 380px;
+    background: url(../images/our-works-6.png) no-repeat; height: 380px; background-position-x: 50%;
 }
 
 
@@ -356,22 +357,41 @@ main{
 
 
 
-@media screen and (max-width: 1200px){
-    nav{
+@media screen and (max-width: 1200px) {
+    nav {
         padding: 0 20px;
     }
-    .subscribe-now{
+
+    .subscribe-now {
         text-align: center;
     }
-    #contacts .contacts-item{
+
+    #contacts .contacts-item {
         padding: 20px;
         text-align: center;
     }
-    .row{
+    #contacts .row{
         margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #our-works .row {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #our-works .row > div {
+        width: 50%;
+    }
+
+    .our-works_item:hover .our-works_item_hidden {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
     }
 }
-
 @media screen and (max-width: 1150px){
     .subscribe-now .content,
     .subscribe-now .content+div{
@@ -382,11 +402,12 @@ main{
     }
 }
 
-@media screen and (max-width: 990px){
+@media screen and (max-width: 991px){
     .menu-icon{
         display: inline-block;
         float: right;
         top: 10px;
+        right: 20px;
         width: 50px;
         background-color: #fff;
         border: 1px solid #ea5218;
@@ -421,7 +442,54 @@ main{
         max-width: 60%;
         margin: 0 auto;
     }
+    #contacts .row{
+        display: block;
+    }
+    #contacts .contacts-item.contacts-header{
+        width: 100%;
+    }
+    .our-services_item .star,
+    .our-services_item .plain,
+    .our-services_item .favorite,
+    .our-services_item .study{
+        width: 84px;
+    }
 }
-@media screen and (max-width: 990px){
+@media screen and (min-width: 991px){
+    #contacts .contacts-item{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .copyright,
+    .copyright-company {
+        text-align: center;
+    }
+    .our-works_item{
+        margin: 0 0 20px 0;
+    }
+    #our-works .row>div{
+        left: 0;
+    }
+    .our-works_item:hover .our-works_item_hidden{
+        width: 55%;
+        margin: 0 auto;
+    }
+    .our-services_item>div{
+        padding: 0 20px;
+    }
+    .our-services_item{
+        padding: 0 0 20px 0;
+    }
+    .our-services_item .people,
+    .our-services_item .star,
+    .our-services_item .dialog,
+    .our-services_item .plain,
+    .our-services_item .favorite{
+        width:93px;
+    }
+    .our-services_item .study{
+        width: 92px;
+    }
 
 }
