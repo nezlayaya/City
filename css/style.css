@@ -553,3 +553,29 @@ iframe{
         width: 100%;
     }
 }
+@media screen and (min-width: 320px){
+    .slider .item .container-fluid h1{
+        font-size: 30px;
+    }
+    .slider .item .container-fluid p{
+        font-size: 18px;
+    }
+    .slider span.button-left,
+    .slider span.button-right{
+        display: none;
+    }
+    .our-services_item .people,
+    .our-services_item .star,
+    .our-services_item .dialog,
+    .our-services_item .plain,
+    .our-services_item .favorite,
+    .our-services_item .study{
+        width:107px;
+    }
+    .our-works_item_hidden section{
+        padding: 10px;
+    }
+    #contacts .contacts-item{
+        text-align: left;
+    }
+}
